@@ -1,7 +1,16 @@
 <img title="splunk dashboard" src="https://i.imgur.com/muUhK86.png">
 
 # unMineable
-Splunk application for importing unMineable's API data
+Splunk application for importing unMineable's API data and monitoring the progress of your mining. 
+
+## Requirements
+
+You will need:
+* Splunk installed and running.
+* Be mining DOGE with unMineable's pools.
+  * This assumes you have a DOGE wallet. 
+* basic knowledge of Splunk and how to install custom apps.
+
 ## Install
 * Copy the files from this to $SPLUNK_HOME/etc/apps/unMineable.
 * Copy the inputs.conf file in the default folder to $SPLUNK_HOME/etc/apps/unMineable/local.
@@ -9,7 +18,7 @@ Splunk application for importing unMineable's API data
 * Set disabled = 1  to disabled = 0
 * Restart Splunk
 
-OR
+### OR
 
 * Copy the files from this to $SPLUNK_HOME/etc/apps/unMineable. Restart Splunk
   * Note: I have an spl file but pointless for github.
@@ -25,7 +34,9 @@ Right now to add more wallets just modify the inputs.conf file or follow the sec
 
 You will want to wait about 4 hours before you get a good data in the dashboard.  
 
-If you wish to tip me, you contributions are welcome. And thank you in advance.
+##
+
+If you wish to tip me, you contributions are welcome. And thank you in advance. Much WOW!
 
 Monero Address:
 44KaDc4rr1Jiiu2sKVcmjV9SDnGRzjZkFZq1LM33goirVHQ8tAYjFnUc81ZdSJ8RUqMPHmoNWkHoWZgKqG17fk3PJeG47En
