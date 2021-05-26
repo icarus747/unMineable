@@ -1,0 +1,20 @@
+[app/ui]
+version = 8.1.3
+modtime = 1621887757.338542000
+
+[app/launcher]
+version = 8.1.3
+modtime = 1621887757.339220000
+
+[inputs/script%3A%2F%2F%24SPLUNK_HOME%2Fetc%2Fapps%2FunMineable%2Fbin%2Fdoge.py%20DLEpZznjYbwRthwfdg7isnHs44Rq6B4CBW]
+owner = admin
+version = 8.1.3
+modtime = 1621992686.303980000
+
+[nav/default]
+version = 8.1.3
+modtime = 1621986013.096368000
+
+[views/unminable]
+version = 8.1.3
+modtime = 1621993633.437703000
