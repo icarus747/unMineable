@@ -25,5 +25,7 @@ Right now to add more wallets just modify the inputs.conf file or follow the sec
 
 You will want to wait about 4 hours before you get a good data in the dashboard.  
 
-If you wish to tip me, you contributions are welcome. And thank you in advance. 
-DLEpZznjYbwRthwfdg7isnHs44Rq6B4CBW
+If you wish to tip me, you contributions are welcome. And thank you in advance.
+
+Monero Address:
+44KaDc4rr1Jiiu2sKVcmjV9SDnGRzjZkFZq1LM33goirVHQ8tAYjFnUc81ZdSJ8RUqMPHmoNWkHoWZgKqG17fk3PJeG47En
