@@ -1,6 +1,6 @@
 <img title="splunk dashboard" src="https://i.imgur.com/muUhK86.png">
 
-# unMineable
+# unMineable version 1.0.1
 Splunk application for importing unMineable's API data and monitoring the progress of your mining. 
 
 ## Requirements
