@@ -12,19 +12,21 @@ You will need:
 * basic knowledge of Splunk and how to install custom apps.
 
 ## Install
-* Copy the files from this to $SPLUNK_HOME/etc/apps/unMineable.
+
+* Copy the files from this to $SPLUNK_HOME/etc/apps/unMineable or use SPL file. Restart Splunk
+  * Note: I have an spl file in releases.
+* From the gui goto settings > data inputs > script.
+* Click 'clone' for the line with $SPLUNK_HOME/etc/apps/unMineable/bin/doge.py <YOUR_WALLET_ID>.
+* In the command filed enter $SPLUNK_HOME/etc/apps/unMineable/bin/doge.py <YOUR_WALLET_ID> replacing  <YOUR_WALLET_ID> with your doge wallet.
+
+
+### OR (more advanced users)
+
+* Copy the files from this to $SPLUNK_HOME/etc/apps/unMineable. Or install from the SPL file in releases.
 * Copy the inputs.conf file in the default folder to $SPLUNK_HOME/etc/apps/unMineable/local.
 * Change  <YOUR_WALLET_ID> to your Doge wallet.
 * Set disabled = 1  to disabled = 0
 * Restart Splunk
-
-### OR
-
-* Copy the files from this to $SPLUNK_HOME/etc/apps/unMineable. Restart Splunk
-  * Note: I have an spl file but pointless for github.
-* From the gui goto settings > data inputs > script.
-* Click 'clone' for the line with $SPLUNK_HOME/etc/apps/unMineable/bin/doge.py <YOUR_WALLET_ID>.
-* In the command filed enter $SPLUNK_HOME/etc/apps/unMineable/bin/doge.py <YOUR_WALLET_ID> replacing  <YOUR_WALLET_ID> with your doge wallet.
 
 
 ## How it works
@@ -33,6 +35,8 @@ Every 20 mins the python script is called to run which pulls your wallet data fr
 Right now to add more wallets just modify the inputs.conf file or follow the second option by cloning the script with a different wallet. The dashboard will have a drop down for different wallets. 
 
 You will want to wait about 4 hours before you get a good data in the dashboard.  
+
+If you would like to add more DOGE wallets, just repeat the process of adding the origional wallet.
 
 ##
 
