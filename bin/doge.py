@@ -7,14 +7,10 @@ import json
 from datetime import datetime
 import sys
 
-def main(wallet, base_url):
+def main(wallet, coin, base_url):
     with session() as suffering_succotash:
-        query = {
-            'tz': '-6',
-            'coin': 'DOGE'
-        }
         body= {'run_time': str(datetime_1)}
-        url = f'https://{base_url}/v3/stats/{wallet}?tz=-6&coin=DOGE'
+        url = f'https://{base_url}/v3/stats/{wallet}?tz=-6&coin={coin}'
         try:
             response = suffering_succotash.get(url=url)
             body.update(response.json())
@@ -23,14 +19,14 @@ def main(wallet, base_url):
             print(json.dumps(body))
             pass
         except:
-            print("Som ting wong.")
+            print(f"Unable to pull {wallet} data.")
     pass
 
 
 if __name__ == '__main__':
     datetime_1 = datetime.now()
     wallets = [sys.argv[1]]
+    coin = sys.argv[2].upper()
     for wallet in wallets:
         base_url = "api.unminable.com"
-        main(wallet, base_url)
-
+        main(wallet, coin, base_url)
