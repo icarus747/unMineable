@@ -16,8 +16,8 @@ You will need:
 * Copy the files from this to $SPLUNK_HOME/etc/apps/unMineable or use SPL file. Restart Splunk
   * Note: I have an spl file in releases.
 * From the gui goto settings > data inputs > script.
-* Click 'clone' for the line with $SPLUNK_HOME/etc/apps/unMineable/bin/doge.py <YOUR_WALLET_ID>.
-* In the command filed enter $SPLUNK_HOME/etc/apps/unMineable/bin/doge.py <YOUR_WALLET_ID> replacing  <YOUR_WALLET_ID> with your doge wallet.
+* Click 'clone' for the line with $SPLUNK_HOME/etc/apps/unMineable/bin/doge.py <YOUR_WALLET_ID> <COIN>.
+* In the command filed enter $SPLUNK_HOME/etc/apps/unMineable/bin/doge.py <YOUR_WALLET_ID> replacing <YOUR_WALLET_ID> with your doge wallet and <coin> with DOGE or if you are using a different coin put ETH for Ethereum OR DOGE for DOGE.
 
 
 ### OR (more advanced users)
@@ -25,6 +25,7 @@ You will need:
 * Copy the files from this to $SPLUNK_HOME/etc/apps/unMineable. Or install from the SPL file in releases.
 * Copy the inputs.conf file in the default folder to $SPLUNK_HOME/etc/apps/unMineable/local.
 * Change  <YOUR_WALLET_ID> to your Doge wallet.
+* Change <COIN> to the coin your wallet is from. IE: DOGE, ETH
 * Set disabled = 1  to disabled = 0
 * Restart Splunk
 
